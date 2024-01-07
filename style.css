@@ -1,0 +1,58 @@
+
+body, h1, h2, h3, p, img, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: gold;
+   
+}
+
+/* Style the input */
+#searchmeal {
+    width: 40%;
+    padding: 10px;
+    margin-top: 19px;
+    margin-left: 2%;
+    box-sizing: border-box;
+    height:50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+   font-weight: bold;
+
+}
+
+/* Style the container */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10%;
+}
+
+/* Style each recipe item */
+#container > div {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    #container > div {
+        width: 100%;
+    }
+}
